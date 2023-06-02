@@ -1,0 +1,2 @@
+NOTES:
+1. change firmware file name to firmware.bin
