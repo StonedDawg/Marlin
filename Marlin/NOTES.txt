@@ -1,0 +1,2 @@
+NOTES:
+change bin file name to 123.bin to upload it.
