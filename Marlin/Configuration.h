@@ -1189,25 +1189,25 @@
  * Set to the state (HIGH or LOW) that applies to each endstop.
  */
 //creality 4.2.2 boards have two variants of stepper drivers one of TMC2208 one of A4988.Try with TMC2208.In configuration.h.If doesn't work try with A4988.
-#define X_DRIVER_TYPE TMC2208_STANDALONE //???????????? A4988
-#define Y_DRIVER_TYPE TMC2208_STANDALONE //???????????? A4988
-#define Z_DRIVER_TYPE TMC2208_STANDALONE //???????????? A4988
-//#define X2_DRIVER_TYPE A4988
-//#define Y2_DRIVER_TYPE A4988
-//#define Z2_DRIVER_TYPE A4988
-//#define Z3_DRIVER_TYPE A4988
-//#define Z4_DRIVER_TYPE A4988
-//#define I_DRIVER_TYPE  A4988
-//#define J_DRIVER_TYPE  A4988
-//#define K_DRIVER_TYPE  A4988
-#define E0_DRIVER_TYPE TMC2208_STANDALONE //???????????? A4988
-//#define E1_DRIVER_TYPE A4988
-//#define E2_DRIVER_TYPE A4988
-//#define E3_DRIVER_TYPE A4988
-//#define E4_DRIVER_TYPE A4988
-//#define E5_DRIVER_TYPE A4988
-//#define E6_DRIVER_TYPE A4988
-//#define E7_DRIVER_TYPE A4988
+#define X_MIN_ENDSTOP_HIT_STATE HIGH
+#define X_MAX_ENDSTOP_HIT_STATE HIGH
+#define Y_MIN_ENDSTOP_HIT_STATE HIGH
+#define Y_MAX_ENDSTOP_HIT_STATE HIGH
+#define Z_MIN_ENDSTOP_HIT_STATE HIGH
+#define Z_MAX_ENDSTOP_HIT_STATE HIGH
+#define I_MIN_ENDSTOP_HIT_STATE HIGH
+#define I_MAX_ENDSTOP_HIT_STATE HIGH
+#define J_MIN_ENDSTOP_HIT_STATE HIGH
+#define J_MAX_ENDSTOP_HIT_STATE HIGH
+#define K_MIN_ENDSTOP_HIT_STATE HIGH
+#define K_MAX_ENDSTOP_HIT_STATE HIGH
+#define U_MIN_ENDSTOP_HIT_STATE HIGH
+#define U_MAX_ENDSTOP_HIT_STATE HIGH
+#define V_MIN_ENDSTOP_HIT_STATE HIGH
+#define V_MAX_ENDSTOP_HIT_STATE HIGH
+#define W_MIN_ENDSTOP_HIT_STATE HIGH
+#define W_MAX_ENDSTOP_HIT_STATE HIGH
+#define Z_MIN_PROBE_ENDSTOP_HIT_STATE HIGH
 
 // Enable this feature if all enabled endstop pins are interrupt-capable.
 // This will remove the need to poll the interrupt pins, saving many CPU cycles.
@@ -2341,6 +2341,7 @@
 #define EEPROM_BOOT_SILENT    // Keep M503 quiet and only give errors during first load
 #if ENABLED(EEPROM_SETTINGS)
   #define EEPROM_AUTO_INIT    // Init EEPROM automatically on any errors.
+  //#define EEPROM_INIT_NOW   // Init EEPROM on first boot after a new build.
 #endif
 
 // @section host
