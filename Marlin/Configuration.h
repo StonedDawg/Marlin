@@ -86,6 +86,7 @@
 // @section machine
 
 // Choose the name from boards.h that matches your setup
+	#define MOTHERBOARD BOARD_CREALITY_V422
 #ifndef MOTHERBOARD
   #define MOTHERBOARD BOARD_RAMPS_14_EFB
 #endif
