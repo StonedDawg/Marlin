@@ -1,2 +1,3 @@
 NOTES:
 1. change firmware file name to firmware.bin
+2. platformio target is BIGTREE_SKR_2
