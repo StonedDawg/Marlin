@@ -2622,8 +2622,8 @@
   #define RETRACT_LENGTH_SWAP          0   // (mm) Default swap retract length (positive value)
   #define RETRACT_FEEDRATE             40   // (mm/s) Default feedrate for retracting
   #define RETRACT_ZRAISE                1   // (mm) Default retract Z-raise
-  #define RETRACT_RECOVER_LENGTH        1   // (mm) Default additional recover length (added to retract length on recover)
-  #define RETRACT_RECOVER_LENGTH_SWAP   0   // (mm) Default additional swap recover length (added to retract length on recover from toolchange)
+  #define RETRACT_RECOVER_LENGTH        2   // (mm) Default additional recover length (added to retract length on recover)
+  #define RETRACT_RECOVER_LENGTH_SWAP   2   // (mm) Default additional swap recover length (added to retract length on recover from toolchange)
   #define RETRACT_RECOVER_FEEDRATE      40   // (mm/s) Default feedrate for recovering from retraction
   #define RETRACT_RECOVER_FEEDRATE_SWAP 25   // (mm/s) Default feedrate for recovering from swap retraction
   #if ENABLED(MIXING_EXTRUDER)
